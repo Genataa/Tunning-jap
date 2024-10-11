@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 200px; /* Можеш да коригираш размера */
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.product-image {
+    width: 50%; /* Ще се адаптира към ширината на родителския елемент */
+    max-width: 200px; /* Максимална ширина на изображението */
+    height: auto; /* Поддържа пропорциите на изображението */
+    display: block; /* Опционално: премахва пространството под изображението */
+    margin: 0 auto; /* Центрира изображението, ако е необходимо */
+}
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрира по оста Y */
+    justify-content: center; /* Центрира по оста X */
+    min-height: 100vh; /* Задава минимална височина на екрана */
+    padding: 20px;
+    background-color: #f4f4f4; /* Можеш да смениш цвета, ако искаш */
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    max-width: 300px; /* Максимална ширина на входа */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* По-тъмен цвят при задържане на мишката */
+}
+.popup {
+    display: none; /* Скрит по подразбиране */
+    position: fixed; /* Позициониране на екрана */
+    z-index: 1000; /* Над всички останали елементи */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачен фон */
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto; /* Центрира по вертикала */
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%; /* Можеш да коригираш ширината */
+    max-width: 500px; /* Максимална ширина */
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black; /* Цветът при задържане на мишката */
+    text-decoration: none;
+    cursor: pointer;
+}
+.about-image {
+    width: 100%; /* Адаптира се към ширината на родителския елемент */
+    max-width: 800px; /* Максимална ширина на изображението */
+    height: auto; /* Поддържа пропорциите на изображението */
+    display: block; /* Премахва пространството под изображението */
+    margin: 0 auto; /* Центрира изображението */
+}
+
